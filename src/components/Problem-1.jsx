@@ -119,19 +119,19 @@ const Problem1 = () => {
                   if (a.status === "active" && b.status !== "active") {
                     return -1;
                   } else if (a.status !== "active" && b.status === "active") {
-                    return 1; // b comes first
+                    return 1;
                   } else if (
                     a.status === "completed" &&
                     b.status !== "completed"
                   ) {
-                    return -1; // a comes first
+                    return -1;
                   } else if (
                     a.status !== "completed" &&
                     b.status === "completed"
                   ) {
-                    return 1; // b comes first
+                    return 1;
                   } else {
-                    return 0; // no change in order
+                    return 0;
                   }
                 })
                 .map((task, i) => (
